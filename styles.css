@@ -1,0 +1,182 @@
+/* General */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Contenedor principal */
+.register-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2em;
+    color: #005f73;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+legend {
+    font-size: 1.5em;
+    color: #0a9396;
+    margin-bottom: 10px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+input:focus, select:focus {
+    border-color: #0a9396;
+    outline: none;
+    box-shadow: 0 0 5px rgba(10, 147, 150, 0.3);
+}
+
+/* Botones */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-register {
+    background-color: #0a9396;
+    color: #fff;
+}
+
+.btn-register:hover {
+    background-color: #005f73;
+}
+
+.btn-cancel {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.btn-cancel:hover {
+    background-color: #c9302c;
+}
+
+/* Estilos del checkbox */
+.form-group input[type="checkbox"] {
+    width: auto;
+}
+
+label[for="confidencialidad"] {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Ajustes adicionales */
+a {
+    color: #0a9396;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar el contenedor principal en pantallas pequeñas */
+    .register-container {
+        padding: 20px;
+    }
+
+    /* Cambiar la dirección de los botones a columnas en pantallas más pequeñas */
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Ajustar el tamaño del título */
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustar el tamaño de la fuente y padding para dispositivos muy pequeños */
+    input, select, button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    /* Asegurar que el contenedor no sea más grande que la pantalla */
+    .register-container {
+        padding: 15px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Asegurar que el formulario tenga un buen espaciado en pantallas muy pequeñas */
+    form {
+        gap: 15px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+}

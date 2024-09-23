@@ -1,0 +1,146 @@
+/* General */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Contenedor del login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.login-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-logo img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100px;
+}
+
+/* Título del formulario */
+h2 {
+    font-size: 1.8em;
+    color: #005f73;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #0a9396;
+    outline: none;
+    box-shadow: 0 0 5px rgba(10, 147, 150, 0.3);
+}
+
+/* Estilos del botón de login */
+button {
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #0a9396;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+/* Sección de registro */
+.register-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.register-text p {
+    margin: 0;
+    color: #333;
+}
+
+.register-text a {
+    color: #0a9396;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .login-box {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 480px) {
+    input, button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .login-box {
+        padding: 15px;
+    }
+
+    form {
+        gap: 15px;
+    }
+}
